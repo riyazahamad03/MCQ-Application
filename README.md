@@ -9,13 +9,11 @@ A Multiple Choice Question (MCQ) application built with the MERN stack.
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
 
-Provide a brief overview of your MCQ application, its purpose, and any unique features.
+The MERN MCQ Application is designed to simplify the process of creating and conducting multiple-choice quizzes, making it an ideal solution for educational institutions, businesses, or anyone looking to assess knowledge in an interactive and engaging manner.
 
 ## Features
 
@@ -27,16 +25,12 @@ List the key features of your MCQ application.
 - View quiz results
 
 ## Prerequisites
-
-Outline the technologies and dependencies required to run your application.
-
+.
 - Node.js and npm
 - MongoDB
 - React and NextJs
 
 ## Installation
-
-Provide step-by-step instructions on how to install and set up your MERN application.
 
 ```bash
 # Clone the repository
@@ -63,3 +57,8 @@ npm install
 # execute the following command
 npm run dev
 -----------------------------------------------
+please note run server side and client side separately in local host
+and also dont forget to add the mongourl and SECRET_KEY .env file
+```
+## Contact
+email : riyazahameddo@gmail.com
