@@ -22,7 +22,7 @@ export default function CreatorPage() {
 
   return (
     <div className="my-10 container mx-auto px-6">
-      <h1 className="my-2 font-style: italic font-weight: 900">
+      <h1 className="my-3 font-bold text-sky-400/100 font-weight: 2000 text-4xl">
         There Are Totally {testLength} Test From This Creator
       </h1>
       <div class="grid grid-cols-4 gap-6">
