@@ -32,7 +32,7 @@ Outline the technologies and dependencies required to run your application.
 
 - Node.js and npm
 - MongoDB
-- React
+- React and NextJs
 
 ## Installation
 
@@ -44,12 +44,22 @@ git clone https://github.com/your-username/your-mern-mcq-app.git
 
 # Navigate to the project directory
 cd your-mern-mcq-app
+-------------------------------------------------
+# Navigate to the server directory
+cd client
 
 # Install server dependencies
 npm install
 
+# execute the following command
+npm run dev
+------------------------------------------------
 # Navigate to the client directory
 cd client
 
 # Install client dependencies
 npm install
+
+# execute the following command
+npm run dev
+-----------------------------------------------
