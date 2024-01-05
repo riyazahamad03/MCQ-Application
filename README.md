@@ -24,13 +24,15 @@ List the key features of your MCQ application.
 - Create mcq quiz
 - Answer multiple-choice questions
 - View quiz results
+- Dashboard
 
 ## Prerequisites
-.
+
 - Node.js and npm
 - MongoDB
 - React and NextJs
-
+- Tailwind Css
+  
 ## Installation
 
 ```bash
