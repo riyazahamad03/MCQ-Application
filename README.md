@@ -71,7 +71,7 @@ email : riyazahameddo@gmail.com
 ![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/one.png)
 ![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/two.png)
 ![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/three.png)
-![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/four.png)
+![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/four_1.png)
 ![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/five.png)
 ![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/six.png)
 ![Alt text](https://github.com/riyazahamad03/MCQ-Application/blob/main/Assets/seven.png)
