@@ -74,6 +74,7 @@ export async function get_creator_tests(creatorId) {
 }
 
 export async function get_test(creatorId, testId) {
+  console.log("im here");
   try {
     const response = await fetch(
       `https://mcq-application-2.onrender.com/creator/${creatorId}/${testId}`,

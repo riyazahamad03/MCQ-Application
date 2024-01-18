@@ -3,6 +3,7 @@ require("dotenv").config();
 
 module.exports = (req, res, next) => {
   try {
+    console.log(req);
     const token = req.cookies.jwt_token;
 
     if (!token) {
@@ -15,7 +16,9 @@ module.exports = (req, res, next) => {
     next();
   } catch (err) {
     console.error('Error in checkAuth middleware:', err);
+    
     return res.status(401).json({
+
       message: "Auth Failed",
       error: err.message,
     });
