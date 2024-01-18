@@ -12,7 +12,25 @@ const userProfile = require("./api/routes/userProfile");
 
 // mongoose.set("strictQuery", false);
 // mongoose.connect("mongodb://localhost:27017");
-mongoose.connect(process.env.MONGO_URL);
+const connectToDatabase = async () => {
+  try {
+    const mongoURI = process.env.MONGODB_URI;
+
+    if (!mongoURI) {
+      throw new Error("MongoDB URI is not defined.");
+    }
+
+    await mongoose.connect(mongoURI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error.message);
+  }
+};
+connectToDatabase();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
