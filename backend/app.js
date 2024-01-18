@@ -52,7 +52,10 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://mcq-application-phi.vercel.app/",
+    ],
     credentials: true,
   })
 );
