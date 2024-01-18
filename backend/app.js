@@ -9,7 +9,7 @@ require("dotenv").config();
 const userRoutes = require("./api/routes/mcqUser");
 const mcqRoutes = require("./api/routes/mcq");
 const userProfile = require("./api/routes/userProfile");
-
+app.use(cors({ credentials: true, origin: true }));
 // mongoose.set("strictQuery", false);
 // mongoose.connect("mongodb://localhost:27017");
 const connectToDatabase = async () => {
@@ -24,7 +24,6 @@ const connectToDatabase = async () => {
       // useNewUrlParser: true,
       // useUnifiedTopology: true,
     });
-
   } catch (error) {
     console.error("Error connecting to MongoDB:", error.message);
   }
@@ -49,15 +48,15 @@ app.use(bodyParser.json());
 //   next();
 // });
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://mcq-application-phi.vercel.app/",
-    ],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:3000",
+//       "https://mcq-application-phi.vercel.app/",
+//     ],
+//     credentials: true,
+//   })
+// );
 
 app.use("/user", userRoutes);
 app.use("/creator", mcqRoutes);

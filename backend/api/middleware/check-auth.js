@@ -3,7 +3,6 @@ require("dotenv").config();
 
 module.exports = (req, res, next) => {
   try {
-    console.log(req);
     const token = req.cookies.jwt_token;
 
     if (!token) {
