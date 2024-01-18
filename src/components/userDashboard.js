@@ -41,7 +41,7 @@ function UserDashboard() {
   return (
     <div className="my-10 container mx-auto px-6">
       <h1 className="my-3 font-bold text-sky-400/100 font-weight: 2000 text-4xl">
-         {uName}'s Dashboard
+         {uName} s Dashboard
       </h1>
       <div className="grid grid-cols-4 gap-4">
         {test &&

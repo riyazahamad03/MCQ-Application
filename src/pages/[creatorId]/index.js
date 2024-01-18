@@ -9,8 +9,8 @@ export default function CreatorPage() {
   async function get_tests() {
     try {
       const data = await get_creator_tests(creatorId);
-      setTests(data.tests || []); 
-      setTestLength((data.tests || []).length); 
+      setTests(data.tests || []);
+      setTestLength((data.tests || []).length);
     } catch (error) {
       console.error("Error fetching creator tests:", error);
     }
@@ -28,7 +28,10 @@ export default function CreatorPage() {
       <div class="grid grid-cols-4 gap-6">
         {tests &&
           tests.map((test) => (
-            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div
+              key={test._id}
+              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
               <a href="#">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {`Test Id : ${test._id}`}

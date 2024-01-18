@@ -27,7 +27,7 @@ export default function HomePage(props) {
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            if you're already a user,click the below button to login and
+            if you re already a user,click the below button to login and
             experience the benefits of this powerfull application
           </p>
           <button
@@ -60,7 +60,7 @@ export default function HomePage(props) {
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            if you're not a member of this app, then click below to Signup. Your
+            if you re not a member of this app, then click below to Signup. Your
             details are always protected.
           </p>
           <button
